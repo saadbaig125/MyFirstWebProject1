@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Victoria's Journal</title>
+    <style>
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        /* Main outer box container */
+        #container {
+            border: 10px solid #a0c4c4;
+            background-color: #e8f2f2;
+            padding: 15px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Top header section */
+        #header {
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        #header h1 {
+            color: #628c8c;
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        #header .subtitle {
+            color: #628c8c;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* Left-side teal vertical striped box */
+        #sidebar {
+            float: left;
+            width: 26%;
+            /* Vertical stripe pattern using standard repeating gradient */
+            background: repeating-linear-gradient(
+                90deg,
+                #009688,
+                #009688 8px,
+                #00897b 8px,
+                #00897b 16px
+            );
+            color: white;
+            padding: 15px;
+            box-sizing: border-box;
+            min-height: 420px;
+        }
+
+        #sidebar h2 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #sidebar ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        #sidebar li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        #sidebar a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Right-side main content area */
+        #main-content {
+            float: right;
+            width: 71%;
+        }
+
+        /* Individual entry box */
+        .journal-entry {
+            border: 2px solid #a0c4c4;
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .entry-title {
+            color: #4b7d7d;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px dashed #a0c4c4;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .journal-entry p {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333333;
+            margin: 0;
+        }
+
+        /* Floating images inside entries */
+        .entry-image {
+            float: right;
+            margin-left: 12px;
+            border: 1px solid #ccc;
+        }
+
+        /* Clearfix utility */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Outer Wrapper Box -->
+    <div id="container">
+
+        <!-- Top Header -->
+        <div id="header">
+            <h1>Victoria's Journal</h1>
+            <div class="subtitle">So fresh and so clean</div>
+        </div>
+
+        <!-- Layout Body -->
+        <div class="clearfix">
+            
+            <!-- Left Striped Sidebar Box with Bulleted List -->
+            <div id="sidebar">
+                <h2>Friends</h2>
+                <ul>
+                    <li><a href="#">RBK</a></li>
+                    <li><a href="#">AP</a></li>
+                    <li><a href="#">MW</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Journal Content -->
+            <div id="main-content">
+
+                <!-- Entry 1 -->
+                <div class="journal-entry clearfix">
+                    <h3 class="entry-title">04/09/08: Spatulas</h3>
+                    <img src="C:\Users\HP\3D Objects\71N65HQDTEL._AC_SL1500_.jpg" alt="Spatula" width="90" class="entry-image">
+                    <p>
+                        Yesterday I went to the store and got some much needed spatulas! What better way to say I love myself than to buy myself a spatula?
+                    </p>
+                </div>
+
+                <!-- Entry 2 -->
+                <div class="journal-entry clearfix">
+                    <h3 class="entry-title">04/08/08: Cookie Cupcakes</h3>
+                    <img src="C:\Users\HP\3D Objects\OIP.jpg" alt="Cookies" width="100" class="entry-image">
+                    <p>
+                        My favorite cartoon character is Cookie, and my favorite dessert is cupcakes, so Cookie Cupcakes are best of both. Sometimes we think what is love, and then we think what is cookie, is he? He gives up the last cookie for you. It's romantic, if the love is cookies, who needs a boyfriend?
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
